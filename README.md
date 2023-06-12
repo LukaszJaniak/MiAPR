@@ -13,17 +13,17 @@ dokonano niezbędnych implemnetacji w celu realizacji projektu.
 
 ### Pseudokod,na podstwie którego realizowano implementację kodu PRM:
 
-G(V,E) = Null //Initialize a graph as empty 
-limit = n //number of nodes to make graph out of 
-Rad = r //radius of neighborhoods 
-For itr in 0...limit: 
-    Xnew = RandomPosition() 
-    Xnearest = Near(G(V,E),Xnew,Rad) //find all nodes within a Rad
-    Xnearest = sort(Xnearest) //sort by increasing distance
-    For node in Xnearest:
-        if not ConnectedComp(Xnew,node) and not Obstacle(Xnew,node):
-            G(V,E) += {Xnew,node} //add edge and node to graph
-            Xnew.comp += node.comp //add Xnew to connected component
+G(V,E) = Null //Initialize a graph as empty <br />
+limit = n //number of nodes to make graph out of <br />
+Rad = r //radius of neighborhoods <br />
+For itr in 0...limit: <br />
+    Xnew = RandomPosition() <br />
+    Xnearest = Near(G(V,E),Xnew,Rad) //find all nodes within a Rad <br />
+    Xnearest = sort(Xnearest) //sort by increasing distance <br />
+    For node in Xnearest: <br />
+        if not ConnectedComp(Xnew,node) and not Obstacle(Xnew,node): <br />
+            G(V,E) += {Xnew,node} //add edge and node to graph <br />
+            Xnew.comp += node.comp //add Xnew to connected component <br />
 Return G(V,E)
 (https://theclassytim.medium.com/robotic-path-planning-prm-prm-b4c64b1f5acb)
 
