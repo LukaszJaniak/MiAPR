@@ -1,5 +1,5 @@
 # MiAPR
-W ramach projektu z przedmiotu metody i algorytmy planowania ruchu realizowano implementację algorytmu PRM* jako planera ścieżki ruchu dla robota mobilnego Turtlebot3 w Navigation stack bazując na środowisku ROS 2 Humble. 
+W ramach projektu z przedmiotu metody i algorytmy planowania ruchu realizowano implementację algorytmu PRM* jako planera ścieżki ruchu dla robota mobilnego Turtlebot3 w Navigation stack bazując na środowisku ROS 2 Humble. Całość zrealizowano w formie pluginu 
 Implementacji planera ruchu dokonano w języku C++ bazując na instrukcji:
 
 https://navigation.ros.org/getting_started/index.html#running-the-example
@@ -28,6 +28,8 @@ Return G(V,E)
 (https://theclassytim.medium.com/robotic-path-planning-prm-prm-b4c64b1f5acb)
 
 Następnie modyfikowano w.w. implementację do algorytmu PRM* poprzez wykorzystanie dynamicznego promienia, zależnego od ilości istniejących punktów, w którym łączono wierzchołki.
+
+Planowania dokonywane jest w każdej pętli programu poprzez wykorzystamoe do tego sprogowanej lokalnej mapy kosztów, co umożliwia reagowanie na zmiany mapy wykryte przez sensor robota. 
 
 ### Schemat uruchomienia algorytmu:
 
